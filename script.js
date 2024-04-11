@@ -1,9 +1,6 @@
-// getComputerChoice that rerurns ‘Rock’, ‘Paper’ or ‘Scissors’
-// function playRound(playerSelection, computerSelection) returns something like "You Lose! Paper beats Rock"
-// playGame() to play the game five times
-// keeps score and reports a winner or loser at the end
+// returns a random choice between Rock or Paper or Scissor
 function getComputerChoice() {
-    let random = Math.floor(Math.random() * 3);
+    let random = Math.floor(Math.random() * 3); // Returns a random number from 0 to 2
     if (random == 0){
         return "Rock";
     }
@@ -14,8 +11,7 @@ function getComputerChoice() {
         return "Scissor";
     }
 }
-// let computerSelection = getComputerChoice();
-// console.log(`Computer chooses: ${computerSelection}`);
+// to get valid inputs which are case insensitive
 function validInput() {
     let playerChoice = prompt("Enter your choice (rock, paper or scissor):");
     console.log(`You wrote: ${playerChoice}`);
@@ -28,8 +24,7 @@ function validInput() {
     }
     return playerChoice;
 }
-// playerSelection = validInput();
-// console.log(`You choose: ${playerSelection}`);
+// for game round
 function playRound(computerSelection, playerSelection) {
     if (computerSelection == "Rock") {
         if (playerSelection == "Paper") {
@@ -74,7 +69,7 @@ function playRound(computerSelection, playerSelection) {
         }
     }
 }
-// playRound(computerSelection,playerSelection);
+// 5 rounds of game
 function playGame() {
     let score = 0
     for (let i = 0; i < 5; i++) {
