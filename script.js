@@ -94,3 +94,17 @@
 //     }
 // }
 // playGame()
+
+const rockBtn = document.getElementById("rock");
+const paperBtn = document.getElementById("paper");
+const scissorBtn = document.getElementById("scissor");
+let player = document.getElementById("player-choice")
+rockBtn.addEventListener("click", function() {
+    player.textContent = "✊🏻"
+});
+paperBtn.addEventListener("click", function() {
+    player.textContent = "✋🏻"
+});
+scissorBtn.addEventListener("click", function() {
+    player.textContent = "✌🏻"
+});
