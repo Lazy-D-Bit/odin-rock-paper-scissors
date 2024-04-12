@@ -1,2 +1,2 @@
 # Project: Rock Paper Scissors
-From https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
+Project from https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
