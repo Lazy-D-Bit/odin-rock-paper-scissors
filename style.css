@@ -28,9 +28,9 @@ h1 {
     font-size: 50px;
     text-align: center;
 }
-.box#result,
-.box#player,
-.box#bot {
+.box.result,
+.box.player,
+.box.computer {
     width: 200px;
     margin: 0 10px;
     border: 5px solid #1b1b1b;
