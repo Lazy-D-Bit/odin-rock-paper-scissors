@@ -98,13 +98,30 @@
 const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorBtn = document.getElementById("scissor");
+const symbol = ["✊🏻","✋🏻","✌🏻"];
 let player = document.getElementById("player-choice")
+let computer = document.getElementById("computer-choice")
+let playerChoice;
+let computerChoice;
 rockBtn.addEventListener("click", function() {
-    player.textContent = "✊🏻"
+    playerChoice = 0;
+    player.textContent = `${symbol[playerChoice]}`;
+    computerChoice = getComputerChoice();
+    computer.textContent = `${symbol[computerChoice]}`
 });
 paperBtn.addEventListener("click", function() {
-    player.textContent = "✋🏻"
+    playerChoice = 1;
+    player.textContent = `${symbol[playerChoice]}`;
+    computerChoice = getComputerChoice();
+    computer.textContent = `${symbol[computerChoice]}`
 });
 scissorBtn.addEventListener("click", function() {
-    player.textContent = "✌🏻"
+    playerChoice = 2;
+    player.textContent = `${symbol[playerChoice]}`;
+    computerChoice = getComputerChoice();
+    computer.textContent = `${symbol[computerChoice]}`
 });
+function getComputerChoice() {
+    let random = Math.floor(Math.random() * 3); // Returns a random number from 0 to 2
+    return random;
+}
